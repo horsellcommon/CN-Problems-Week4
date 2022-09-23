@@ -4,6 +4,11 @@ Create an object that has a property with key 'a' and a value of 'b'
 Return the object
 */
 
-const twoStringedArg = (a, b) => {}
+let newObject = {}
+const twoStringedArg = (a, b) => {
+    newObject[a] = b // head is wrecked
+};
 
-module.exports = {}
+console.log(twoStringedArg(newObject))
+
+module.exports = {twoStringedArg}
